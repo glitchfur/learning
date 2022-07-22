@@ -30,6 +30,7 @@ jobs:
       - name: Add a file
         run: |
           echo Hello world! > file.txt
+          git config user.name "GitHub Actions"
           git add file.txt
           git commit -m "Add file"
           git push
